@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 비교 연산자 
+        // == 동등 연산자 cf. = 은 대입 연산자
+        console.log(1==2); // false
+        console.log(1==1); // true
+
+        // === 일치 연산자 : 데이터형과 값이 같을 때 true
+        console.log(1=='1');    // true
+        console.log(1==='1');   // false. 데이터형이 다름
+
+        // null 값이 없음을 명시. undefined 정의되지 않은 상태
+        console.log(null == undefined);     // true
+        console.log(null === undefined);    // false
+        // true(1), false(0) 는 데이터형식(boolean)
+        console.log(true == 1);     // true
+        console.log(true === 1);    // false
+        console.log(true == '1');   // true
+        console.log(true === '1');  // false
+
+        console.log(0 === -0);      // true
+        // NaN: 숫자가 아님
+        console.log(NaN === NaN);   // false
+
+    </script>
+</body>
+</html>
