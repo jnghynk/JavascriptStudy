@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 논리 연산자 && : 좌항과 우항 모두 true일 때 전체가 true
+        if(true && true){
+            alert(1);
+        }
+        if(true && false){
+            alert(2);
+        }
+        if(false && true){
+            alert(3);
+        }
+        if(false && false){
+            alert(4);
+        }
+
+        // 조건문 응용 - 논리 연산자 && 이용
+        id = prompt('아이디 입력');
+        password = prompt('비밀번호 입력');
+        if(id=='kim' && password=='1111'){  // id 가 kim 이고 password가 1111 이면 참
+            alert('인증 성공');
+        } else {
+            alert('인증 실패');
+        }
+
+        // 논리 연산자 || : 좌우항 중 하나라도 true이면 true
+        if(true || true){
+            alert('true || true');
+        }
+        if(true || false){
+            alert('true || false');
+        }
+        if(false || true){
+            alert('false || true');
+        }
+        if(false || false){
+            alert('false || false');
+        }
+
+        // 조건문 응용 - 논리 연산자 || 이용
+        id = prompt('아이디 입력');
+        if(id==='kim' || id==='kim1' || id==='kim2'){
+            alert('인증 성공');
+        } else {
+            alert('인증 실패');
+        }
+
+        // 조건문 응용 - 논리 연산자 (&&, ||) 이용
+        id = prompt('아이디 입력');
+        password = prompt('비밀번호 입력');
+        if((id==='kim' || id==='kim1' || id==='kim2') && password==='1111'){
+            alert('인증 성공');
+        } else {
+            alert('인증 실패');
+        }
+
+        // not 연산자 !: 부정의 의미로 boolean의 값을 역전
+        if(!true && !true){
+            alert(1);
+        }
+        if(!false && !true){
+            alert(2);
+        }
+        if(!true && !false){
+            alert(3);
+        }
+        if(!false && !false){
+            alert(4); // 4만 실행
+        }
+
+        // boolean의 대체재
+        // false -> 0, true -> 1
+        if(0){
+            alert('if 0');
+        }
+        if(1){
+            alert('if 1');
+        }
+
+        // 기타 false로 간주되는 데이터 형
+        if(!''){
+            alert('빈 문자열');
+        }
+        if(!undefined){
+            alert('undefined');
+        }
+        var a;
+        if(!a){
+            alert('값이 할당되지 않은 변수');
+        }
+        if(!null){
+            alert('null');
+        }
+        if(!NaN){
+            alert('NaN');
+        }
+    </script>
+</body>
+</html>
